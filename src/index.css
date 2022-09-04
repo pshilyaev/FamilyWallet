@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-container {
+    @apply w-full max-w-3xl sm:mt-14 mx-auto overflow-hidden sm:rounded-xl shadow-lg bg-gray-300 border-4 border-gray-500 text-slate-300 text-lg
+  }
+
+  .headline {
+    @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-slate-800 sm:px-10  bg-gray-900 font-bold text-violet-400 flex items-center
+  }
+  .headline-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-t from-sky-600 to-sky-800
+  }
+
+  .form-style {
+    @apply flex flex-col border-4 border-gray-600
+  }
+
+  .form-title{
+    @apply px-6 py-3 bg-gray-900 text-gray-100
+  }
+
+  .input-style{
+    @apply px-6 py-3 text-gray-700 border-none outline-0 bg-gray-200 placeholder-gray-400 focus:placeholder-transparent focus:bg-gray-300 hover:bg-gray-300 z-40
+  }
+
+  .btn-purple {
+    @apply font-bold px-4 py-3 text-sm tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-sky-500  hover:bg-sky-600 z-30
+  }
+
+  .btn-grey {
+    @apply px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-gray-700 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none
+  }
+
+  .btn-connect{
+    @apply bg-sky-500 p-3 rounded-lg text-slate-100 font-bold text-base
+  }
+
+  .bank-owner-section{
+    @apply bg-indigo-900 bg-opacity-60 text-white w-4/5 mx-auto border-2 rounded-xl border-indigo-500 mb-10
+  }
+}
